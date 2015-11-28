@@ -120,15 +120,22 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
 /* End global colors */
 
 nav .brand-logo{
-    padding-left: 20px;
+    padding-left: 5.4vh;
     position: relative;
     height:100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 #fp-nav {
   background-color: rgba(0, 0, 0, 0.78);
   position: fixed;
   z-index: 10;
+  height: 10vh;
 }
 
 .import-a{
@@ -267,7 +274,7 @@ hide mdi-action-visibility mdi-action-visibility-off
 /* INDEX PAGE */
 
 #zicon{
-    height: 64px;
+    height: 100%;
     transition: padding 1s ease;
 }
 
@@ -292,7 +299,7 @@ hide mdi-action-visibility mdi-action-visibility-off
 }
 
 .mega{
-  padding: 64px 0px;
+  padding: 0;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -311,7 +318,7 @@ hide mdi-action-visibility mdi-action-visibility-off
   background-position: 16% 92%;
   /* background-size: inherit; */
   background-repeat: no-repeat;
-  background-size: 238%;
+  background-size: 214vh;
   /* -webkit-filter: blur(13px); */
   /* background-color: #461594; */
   /* background-size: 400% 400% !important; */
@@ -320,32 +327,33 @@ hide mdi-action-visibility mdi-action-visibility-off
 
 .bg1{
   background-image: url(s1x.png);
-  -webkit-filter: blur(13px);;
+  -webkit-filter: blur(0);
 }
 
 .bg2{
-  background-color: rgb(2, 103, 255);
-  -webkit-filter: blur(80px);
+  background-color: rgb(255, 82, 0);
+  -webkit-filter: blur(19vh);
 }
 
 .bg3{
   background-image: url(s2.jpg);
-  -webkit-filter: blur(13px);
-  background-position: 18% 88%;
+  /* -webkit-filter: blur(3vw); */
+  background-size: 218vh;
+  background-position: 37% 27%;
 }
 
 .bg4{
   background-image: url(s3x.jpg);
-  -webkit-filter: blur(13px);;
+  -webkit-filter: blur(17vw) saturate(1.5);
 }
 
 .bg5{
-  background-color: rgb(76, 2, 255);
+  background-color: rgb(191, 30, 60);
   -webkit-filter: blur(0px);
 }
 
 .bg6{
-    background-image: radial-gradient(farthest-side at 0% 0%, rgb(0, 20, 255) 0px, rgba(0, 0, 0, 0) 126%);
+    background-image: radial-gradient(farthest-side at 0% 0%, rgb(0, 20, 255) 0px, rgba(0, 0, 0, 0) 88vh);
     background-color: rgb(255, 0, 0);
     /* -webkit-filter: blur(0px); */
     background-size: 107%;
@@ -377,16 +385,19 @@ hide mdi-action-visibility mdi-action-visibility-off
   margin-right: auto;
   display: block;
   /* height: 500px; */
-  padding-top: 56px;
+  padding-top: 10vh;
 }
 
 .mega h5{
-  font-size: 91px;
+  font-size: 20vw;
 }
 
 .mega h4{
-    font-size: 42px;
-    padding-top: 70px;
+    font-size: 10vw;
+    /* padding-top: 70px; */
+    bottom: 15vh;
+    position: fixed;
+    width: 100%;
 }
 
 .mega form{
