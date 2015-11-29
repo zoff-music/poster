@@ -1,14 +1,13 @@
 <?php
 
-    $name=$_GET["name"];
-    $bg=$_GET["bg"];
-    $font=$_GET["font"];
-    $count=$_GET["count"];
-
-    if(!isset($name)) $name = "party";
-    if(!isset($bg)) $bg = 1;
-    if(!isset($font)) $font = "inherit";
-    if(!isset($count)) $count = 1;
+    if(!isset($_GET["name"])) $name = "party";
+    else $name=$_GET["name"];
+    if(!isset($_GET["bg"])) $bg = 1;
+    else $bg=$_GET["bg"];
+    if(!isset($_GET["font"])) $font = "inherit";
+    else $font=$_GET["font"];
+    if(!isset($_GET["count"])) $count = 1;
+    else $count=$_GET["count"];
 
 ?>
 
@@ -23,7 +22,7 @@
 |    Made by: Nicolas Almagro Tonne and Kasper Rynning-Tønnesen   |
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-<title>Zöff</title>
+<title><?php print($name);?></title>
 <meta name="author" content="Nicolas &#39;Nixo&#39; Almagro Tonne &amp; Kasper &#39;KasperRT&#39; Rynning-Tønnesen">
 <meta name="description" content="The Shared (free) YouTube radio. Being built around the YouTube search and video API it enables the creation of collaborative and shared live playlists, with billions of videos and songs to choose from, all for free and without registration. Enjoy!">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
