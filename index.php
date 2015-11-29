@@ -1,3 +1,18 @@
+<?php
+
+    $name=$_GET["name"];
+    $bg=$_GET["bg"];
+    $font=$_GET["font"];
+    $count=$_GET["count"];
+
+    if(!isset($name)) $name = "party";
+    if(!isset($bg)) $bg = 1;
+    if(!isset($font)) $font = "inherit";
+    if(!isset($count)) $count = 1;
+
+?>
+
+
 <!DOCTYPE html>
 <!-- saved from url=(0043)file:///home/nixo/temp/zoffposter/zoff.html -->
 <html lang="en"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -56,14 +71,20 @@
     </header>
 
     <div class="section mega">
-        <div class="section mega">
-        <div id="mega-background" class="bg bg6"></div>
-        <h5>PARTY<br>PARTY<br>PARTY</h5>
-
-        <h4>zoff.no</h4>
-
+        <div class="section mega" style="font-family: <?php print($font);?>">
+          <div id="mega-background" class="bg bg<?php print($bg); ?>"></div>
+          <h5><?php
             
+            for ($i=0; $i < $count; $i++) { 
+              print($name."<br>");
+            }
             
+          ?></h5>
+
+          <h4>zoff.no</h4>
+
+              
+              
     </div>
             
     </div>
